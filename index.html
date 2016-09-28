@@ -9,16 +9,31 @@
 
   <meta name="author" content="Dario Agliottone">
   <meta name="description" content="Sviluppatore Web Backend e Frontend. Freelancer con p.iva.  Django Specialist. Pesaro, Fano, Riccione, Rimini">
-  <title>Dario Agliottone - Python & Javascript Developer</title>
+  <title>Dario Agliottone - Django & Javascript Developer</title>
   <!-- Bootstrap -->
-
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-  .portfolio {
-    display: none
+  <script>
+  function gup( name, url ) {
+      if (!url) url = location.href;
+      name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+      var regexS = "[\\?&]"+name+"=([^&#]*)";
+      var regex = new RegExp( regexS );
+      var results = regex.exec( url );
+      return results == null ? null : results[1];
   }
-  </style>
+  print = gup('print', window.location.href)
+  if(print){
+    document.write('<link href="bootstrap/css/bootstrap.min2.css" rel="stylesheet">');
+    document.write('<link rel="stylesheet" type="text/css" media="print" href="assets/css/print.css">');
+    
 
+
+  }else{
+  document.write('<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">');
+   document.write('<style>.portfolio {      display: none    }    </style>');
+    
+
+  }
+  </script>
 
   <!-- CSS Font Icon and Plugins -->
   <link href="assets/font/fa/css/font-awesome.min.css" rel="stylesheet">
@@ -92,14 +107,22 @@
                     </div>
                     <div class="col-md-9">
                       <div class="mini-desc">
-                        <h2 class="title">Ciao, sono <span itemprop="name">Dario Agliottone</span></h2>
+                        <h2 class="title"><span itemprop="name">Dario Agliottone</span>, <span itemprop="title">Web Developer Front-end e Back-end</span></h2>
                         <p>
-                          Mi definisco <span itemprop="title">Sviluppatore Web Full-stack, Front-end e Back-end</span>, su web e mobile. Amo programmare in javascript e python, specialmente con Django e Angularjs\ionic e
-                          Backbone. Quando necessario uso wordpress. I progetti nuovi e ambiziosi mi stimolano molto, ci metto impegno e passione.
+                          Ciao sono Dario Agliottone e programmo dall'età di 15 anni, sono appassionato di web, informatica e nuove tecnologie.
+                          Nel mio percorso ho provato diversi linguaggi di programmazione, framework e ambienti di lavoro.
+                          Mi sono specializzato in <b>Django</b>(python) maturando 5 anni di esperienza continua su questo fantastico framework.
+                          Padroneggio molto bene il <b>javascript</b> e i nuovi strumenti html5, ho sviluppato con Backbone e Angularjs oltre che a jQuery ovviamente.
+                          Solitamente lavoro in abiente Unix e per i database mi avvalgo solitamete di mysql.
+                          Mi piace lavorare in team, ma so svolgere lavori anche in autonomia.
+                          I progetti nuovi e ambiziosi mi stimolano molto, ci metto sempre impegno e passione.
+                          
                         </p>
                         <p>
-                          Attualmente lavoro come freelancer con p.iva, ma valuto anche altre opportunità. Vivo tra <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Pesaro</span></span>  e Fano, disponibile eventualmente al trasferimento. Lavoro anche
-                          a distanza, in team o in autonomia.
+                          Se pensi che possa essere la persona giusta per iniziare una collaborazione contattami.
+                          Attualmente vivo a 
+                          <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Pesaro</span></span>,
+                          ma sono disponibile a anche al lavoro in remoto e eventualmente al trasferimento
 
                         </p>
                         <a href="#contact" class="changetab btn btn-flat btn-block"><i class="fa icon-mail"></i> Richiedi il CV completo con lavori svolti</a>
@@ -116,7 +139,8 @@
                   <div class="deviter"></div>
                   <div class="row">
                     <div class="col-md-6">
-                      <h3 class="title with-icon"><i class="fa fa-credit-card icn-title"></i> Dati Anagrafici</h3>
+                      <h3 class="title with-icon"><i class="fa fa-credit-c
+ard icn-title"></i> Dati Anagrafici</h3>
                       <div class="identity-area">
                         <div class="row">
                           <div class="col-md-4">
@@ -140,19 +164,19 @@
                           <div class="col-md-4">
                             <label>Residenza</label>
                           </div>
-                          <div class="col-md-8">tra Pesaro e Fano</div>
+                          <div class="col-md-8">Pesaro</div>
                         </div>
                         <div class="row">
                           <div class="col-md-4">
                             <label>Disponibilità al trasferimento</label>
                           </div>
-                          <div class="col-md-8">Si</div>
+                          <div class="col-md-8">Si da valutare</div>
                         </div>
                         <div class="row">
                           <div class="col-md-4">
-                            <label>Situazione Attuale</label>
+                            <label>Disponibilità a lavorare in remoto</label>
                           </div>
-                          <div class="col-md-8">Freelancer con P.IVA</div>
+                          <div class="col-md-8">Si</div>
                         </div>
                         <div class="row">
                           <div class="col-md-4">
@@ -209,7 +233,6 @@
                           <li><i class="fa fa-check"></i> Integrazione con Servizi di terze parti, Google, Facebook ecc.</li>
                           <li><i class="fa fa-check"></i> Customizzazione avanzata e plugin per Wordpress</li>
                           <li><i class="fa fa-check"></i> Estensioni e app per Chrome</li>
-                          <li><i class="fa fa-check"></i> Social Network con Elgg o Buddypress</li>
                         </ul>
                       </div>
                     </div>
@@ -323,7 +346,7 @@
                               <span class="caption-skill">Javascript</span>
                               <div class="progress">
                                 <div class="progress-bar" style="width: 80%;">
-                                  <span>90% </span>
+                                  <span>80% </span>
                                 </div>
                               </div>
                             </li>
@@ -346,8 +369,8 @@
                             <li>
                               <span class="caption-skill">HTML5\CSS3</span>
                               <div class="progress">
-                                <div class="progress-bar" style="width: 80%;">
-                                  <span>80% </span>
+                                <div class="progress-bar" style="width: 90%;">
+                                  <span>90% </span>
                                 </div>
                               </div>
                             </li>
@@ -385,29 +408,29 @@
                             <li>
                               <span class="caption-skill">Backbone</span>
                               <div class="pogress-point">
-                                <span class="point-indicator">70%</span>
-                                <div class="progress-bar-point" style="width: 70%;"></div>
+                                <span class="point-indicator">80%</span>
+                                <div class="progress-bar-point" style="width: 80%;"></div>
                               </div>
                             </li>
                             <li>
                               <span class="caption-skill">Angularjs</span>
                               <div class="pogress-point">
-                                <span class="point-indicator">60%</span>
-                                <div class="progress-bar-point" style="width: 60%;"></div>
+                                <span class="point-indicator">50%</span>
+                                <div class="progress-bar-point" style="width: 50%;"></div>
                               </div>
                             </li>
                             <li>
                               <span class="caption-skill">Ionic\Cordova</span>
                               <div class="pogress-point">
-                                <span class="point-indicator">90%</span>
-                                <div class="progress-bar-point" style="width: 90%;"></div>
+                                <span class="point-indicator">80%</span>
+                                <div class="progress-bar-point" style="width: 80%;"></div>
                               </div>
                             </li>
                             <li>
                               <span class="caption-skill">Wordpress</span>
                               <div class="pogress-point">
-                                <span class="point-indicator">80%</span>
-                                <div class="progress-bar-point" style="width: 80%;"></div>
+                                <span class="point-indicator">90%</span>
+                                <div class="progress-bar-point" style="width: 90%;"></div>
                               </div>
                             </li>
                           </ul>
@@ -422,7 +445,7 @@
                       <div class="box-block">
                         <ul class="list-unstyled list-strip">
                           <li><i class="fa fa-check"></i> Italiano</li>
-                          <li><i class="fa fa-check"></i> Inglese</li>
+                          <li><i class="fa fa-check"></i> Inglese (base)</li>
                         </ul>
                       </div>
                       <div class="deviter noprint"></div>
@@ -454,7 +477,7 @@
                                 <div class="media-body">
                                   <p>
                                     Single Page Application realizzata con Backbone. Sistema di Ticketing con calendario per organizzare le assistenze, (simile a google calendar).
-                                    <br>Multilingua. Integrato nell' admin nativo di Django (1.4)</p>
+                                    <br>Multilingua. Integrato nell' admin nativo di Django (1.8)</p>
                                 </div>
                               </div>
                             </div>
@@ -608,11 +631,15 @@
                 ===================================-->
               <div id='contact' class="tab-pane fade">
                 <div class="body-content">
-                  <h3 class="title with-icon"><span class="fa fa-coffee icn-title"></span> Contattami per richiedere il CV completo dei lavori svolti</h3>
+                  <h3 class="title with-icon"><span class="fa fa-coffee icn-title"></span> Contatti</h3>
                   <div class="row">
+                 
                     <div class="col-md-12">
+                     <p>Se pensi che sia la figura giusta per il tuo progetto, non esitare a contattarmi</p>
                       <p>Telefono: +39 339-4842920</p>
                       <p>Email: dario.agliottone@gmail.com</p>
+                      <p>Skype: dario89.007</p>
+                      <p>linkedin: <a target="_blank" href="http://www.linkedin.com/in/agliottone/">linkedin.com/in/agliottone/</a> </p>
                     </div>
                   </div>
 
@@ -644,13 +671,13 @@
             Start Footer section
             ===================================-->
           <footer class="footer">
-            darioagliottone.it | dario.agliottone@gmail.com | +39 339-4842920
-            <a href="?it">
+            agliottone.github.io | dario.agliottone@gmail.com | +39 339 4842920
+            <!--  <a href="//agliottone.github.io">
               <img src="assets/images/it.png" style=" height: 34px; " />
             </a>
             <a href="en">
               <img src="assets/images/en.png" style=" height: 34px; " />
-            </a>
+            </a>-->
           </footer>
           <!-- =========
             End Footer section
